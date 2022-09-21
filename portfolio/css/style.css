@@ -1,0 +1,230 @@
+:root {
+  /* Usar root para para facilitar a mudança de cor no site*/
+  font-size: 16px;
+  --black: #000000;
+  --white: #fff;
+  --backgroud: #e2e3e9;
+}
+
+/*Usar asterisco para predefinir tags em todo site*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--backgroud);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--black);
+  height: 4.6875rem;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.menu a:hover {
+  background: var(--black);
+}
+
+.btn-menu {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: block;
+    position: absolute;
+    top: 4.6875rem;
+    left: 0;
+    background: var(--black);
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  .menu a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.801);
+    border-radius: 0;
+  }
+  .btn-menu {
+    background: none;
+    border: none;
+    font: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+  .nav:focus-within .menu {
+    height: calc(100vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .nav:focus-within .hamburger {
+    border-top-color: transparent;
+  }
+  .nav:focus-within .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .nav:focus-within .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+    main {
+      background: #000000;
+      background-size: cover;
+  }
+ #textosResumo {
+  padding-top: 0;
+  padding-left: 0;
+  padding: 20vh;
+  text-align: left;
+ }
+
+ #sobreMim {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 20vh;
+  text-align: left;
+  
+}
+
+}
+
+main {
+  background: #000000;
+  background-size: cover;
+}
+footer {
+  background: #000000;
+}
+
+#textosResumo {
+  font-family: "Poppins", sans-serif;
+  padding-top: 40vh;
+  padding-left: 100px;
+  color: #fff;
+}
+
+h1 {
+  font-size: 40px;
+  color: green;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+h5 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#sobreMim {
+  padding-top: 100px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding-top: 50vh;
+  padding-bottom: 50vh;
+  padding-left: 100px;
+}
+
+#sobreMim h1 {
+  padding-bottom: 20px;
+}
+
+#formularioDeContato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  display: block;
+}
+
+#contato h1 {
+  padding-top: 50vh;
+}
+
+textarea {
+  padding-bottom: 20px;
+}
+
+img {
+  float: right;
+  width: 300px;
+  height: 300px;
+  margin: 20vh;
+}
+
+footer {
+  border-style: outset;
+  text-align: center;
+  height: 5vh;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+@media screen and (max-width: 999px) {
+  body{
+      
+      background: black;
+  }
+
+  footer{
+      background: black
+  }
+}

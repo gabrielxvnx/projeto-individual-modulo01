@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href=".//css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href=".//imagens/logo3.png" type="image/x-icon">
+  </head>
+  <body>
+    <header class="header">
+      <a href=".//index.html" class="logo">Gabriel Vinícius</a>
+      <nav class="nav">
+        <button
+          class="btn-menu"
+          aria-label="Abrir Menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+        <span class="hamburger"></span>
+        </button>
+        <!-- <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label-menu"
+          >Menu<span class="hamburger"></span
+        ></label> -->
+        <ul class="menu" id="menu" role="menu">
+          <li><a href=".//index.html">Resumo</a></li>
+          <li><a href="#sobreMim">Sobre mim</a></li>
+          <li><a href="#fim">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <img src=".//imagens/eu3.png" alt="eu">
+        <div id="textosResumo">
+<h3>Olá me chamo Gabriel Vinícius</h3>
+<h1>Sou Desenvolvedor Full Stack</h1>
+<h5>Atualmente estou estudando Desenvolvimento Web pelo projeto Programadores Cariocas</h5>
+</div>
+
+
+<div id="sobreMim">
+    <h1>Sobre mim</h1>
+    <p>Me chamo Gabriel Vinícius, tenho 19 anos e sou natural da cidade do Rio de Janeiro.</p>  
+        <p>desde novo sempre tive muito interesse em computadores e tecnologia,</p>
+<p>meus hobbies são ouvir música, assistir séries e jogar videogame.</p>
+<p>Estou sempre disposto a aprender coisas novas e espalhar conhecimento pelo mundo.</p>
+
+<div id="contato">
+<h1>Formulário de contato</h1>
+<div id="formularioDeContato">
+<label for="name">Nome</label>
+<input type="text" name="name" id="name" />
+<label for="email">E-mail</label>
+<input type="email" name="email" id="email" />
+<label for="message">Mensagem</label>
+<textarea name="message">Mensagem</textarea>
+<button type="submit">Enviar</button>
+</div>
+</div>
+    </main>
+
+    <footer id="fim">
+      <p>Projeto Individual Modulo 01</p>
+  </footer>
+
+  </body>
+</html>
